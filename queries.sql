@@ -10,11 +10,19 @@ select * from animals where neutered = true
 select * from animals where name <> 'Gabumon'
 select * from animals where weight_kg >= 10.4 and weight_kg <= 17.3
 
-BEGIN;
-UPDATE animals SET species = 'unspecified';
-ROLLBACK;
+begin;
+update animals set species = 'unspecified';
+rollback;
 
-BEGIN;
-UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon%';
-UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
-COMMIT;
+select * from animals
+
+begin;
+update animals set species = 'digimon' where name like '%mon%';
+update animals set species = 'pokemon' where species is NULL;
+commit;
+
+select species from animals
+
+begin
+delete * from animals
+rollback
