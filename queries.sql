@@ -26,3 +26,7 @@ select species from animals
 begin
 delete * from animals
 rollback
+
+begin;
+delete  from animals
+rollback
