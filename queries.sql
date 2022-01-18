@@ -40,3 +40,8 @@ update animals set weight_kg = weight_kg * -1
 rollback to sp1
 update animals set weight_kg = weight_kg * -1 where weight_kg < 0;
 commit
+
+-- queries to answer questions
+
+select count(*) from animals
+select count(*) from animals where escape_attempts = 0
