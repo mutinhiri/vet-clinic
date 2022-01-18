@@ -46,3 +46,4 @@ commit
 select count(*) from animals
 select count(*) from animals where escape_attempts = 0
 select avg(weight_kg) from animals
+select neutered, avg(escape_attempts) from animals group by neutered;
