@@ -8,6 +8,6 @@ CREATE TABLE animals (
     escape_attempts int,
     neutered boolean,
     weight_kg real,
-    species varchar
-
 );
+
+ALTER TABLE animals ADD COLUMN species VARCHAR;
