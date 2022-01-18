@@ -19,9 +19,9 @@ select * from animals
 begin;
 update animals set species = 'digimon' where name like '%mon%';
 update animals set species = 'pokemon' where species is NULL;
+select species from animals; --verify before commit
 commit;
-
-select species from animals
+select species from animals --verify after commit
 
 begin
 delete * from animals
@@ -39,7 +39,9 @@ savepoint sp1
 update animals set weight_kg = weight_kg * -1
 rollback to sp1
 update animals set weight_kg = weight_kg * -1 where weight_kg < 0;
+select weight_kg from animals --verify before commit
 commit
+select weight_kg from animals --verify after commit
 
 -- queries to answer questions
 
