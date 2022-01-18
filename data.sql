@@ -7,3 +7,4 @@ insert into animals (name, date_of_birth, weight_kg, neutered, escape_attempts) 
 
 insert into animals (name, date_of_birth, weight_kg, neutered, escape_attempts) values ('Charmander', '2020-02-08', -11.0, false, 0)
 insert into animals (name, date_of_birth, weight_kg, neutered, escape_attempts) values ('Plantmon', '2022-11-15', -5.7, true, 2)
+insert into animals (name, date_of_birth, weight_kg, neutered, escape_attempts) values ('Squirtle', '1993-04-02', -12.13, false, 3)
