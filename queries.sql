@@ -30,3 +30,13 @@ rollback
 begin;
 delete  from animals
 rollback
+
+select * from animals
+
+begin;
+delete from animals where date_of_birth > '2022-01-01';
+savepoint sp1
+update animals set weight_kg = weight_kg * -1
+rollback to sp1
+update animals set weight_kg = weight_kg * -1 where weight_kg < 0;
+commit
