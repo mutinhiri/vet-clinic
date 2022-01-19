@@ -28,3 +28,6 @@ create table species(
 -- alter table 
 alter table animals drop column species;
 
+alter table animals add species_id int;
+alter table animals 
+add foreign key(species_id) references species(id)
