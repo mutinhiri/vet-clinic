@@ -27,3 +27,6 @@ insert into species (name) values ('Digimon')
 --query and update
 update animals set species_id = (select id from species where name = 'Digimon') where name like '%mon'
 update animals set species_id = (select id from species where name = 'Pokemon') where name not like '%mon'
+
+update animals set owner_id = (select id from owners where full_name = 'Sam Smith') where name = 'Agumon'
+update animals set owner_id = (select id from owners where full_name = 'Jennifer Orwell') where name = 'Gabumon' or name = 'Pikachu'
