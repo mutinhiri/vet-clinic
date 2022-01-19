@@ -51,3 +51,7 @@ select avg(weight_kg) from animals
 select neutered, avg(escape_attempts) from animals group by neutered;
 select species, min(weight_kg), max(weight_kg) from animals group by species
 select species, avg(escape_attempts) from animals where date_of_birth between '1990-01-01' and '2000-12-31' group by species
+
+--queries to answer questions 
+
+select animals.name from animals join owners on owner_id = owners.id where owners.full_name = 'Melody Pond'
