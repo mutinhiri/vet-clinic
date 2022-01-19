@@ -23,3 +23,6 @@ insert into owners (full_name, age) values('Jodie Whittaker', 38)
 --insert into species table 
 insert into species (name) values ('Pokemon')
 insert into species (name) values ('Digimon')
+
+--query and update
+update animals set species_id = (select id from species where name = 'Digimon') where name like '%mon'
