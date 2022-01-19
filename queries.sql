@@ -58,3 +58,4 @@ select animals.name from animals join owners on owner_id = owners.id where owner
 select animals.name from animals join species on species.id = animals.species_id where species.name = 'Pokemon'
 select owners.full_name, animals.name from owners left join animals on animals.owner_id = owners.id
 select species.name, count(*) from animals full outer join species on species.id = animals.species_id group by species.id
+select animals.name, owners.full_name from animals join owners on owners.id = animals.owner_id join species on species.id = animals.species_id where owners.full_name = 'Jennifer Orwell' and species.name = 'Digimon'
