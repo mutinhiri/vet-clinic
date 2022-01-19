@@ -30,3 +30,4 @@ update animals set species_id = (select id from species where name = 'Pokemon') 
 
 update animals set owner_id = (select id from owners where full_name = 'Sam Smith') where name = 'Agumon'
 update animals set owner_id = (select id from owners where full_name = 'Jennifer Orwell') where name = 'Gabumon' or name = 'Pikachu'
+update animals set owner_id = (select id from owners where full_name = 'Bob') where name = 'Devimon' or name = 'Plantmon'
