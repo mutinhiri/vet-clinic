@@ -56,3 +56,4 @@ select species, avg(escape_attempts) from animals where date_of_birth between '1
 
 select animals.name from animals join owners on owner_id = owners.id where owners.full_name = 'Melody Pond'
 select animals.name from animals join species on species.id = animals.species_id where species.name = 'Pokemon'
+select owners.full_name, animals.name from owners left join animals on animals.owner_id = owners.id
