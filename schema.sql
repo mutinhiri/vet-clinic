@@ -37,4 +37,4 @@ add foreign key(species_id) references species(id)
 alter table animals
 add owner_id int;
 
-alter table animals add foreign key(owner_id) references owners(id)
+alter table animals add foreign key(owner_id) references owners(id) 
