@@ -24,3 +24,7 @@ create table species(
 	name varchar(50),
     primary key(id)
 );
+
+-- alter table 
+alter table animals drop column species;
+
