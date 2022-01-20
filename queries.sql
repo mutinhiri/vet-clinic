@@ -71,3 +71,6 @@ select vets.name, specializations.species_id from vets left join specializations
 select animals.name, visits.date_of_visit from animals join visits on animals.id = visits.animal_id where visits.vet_id = (select id from vets where name = 'Stephanie Mendez') and visits.date_of_visit between '2020-04-01' and '2020-08-30';
 
 select animals.name, count(*) from animals left join visits on animals.id = visits.animal_id group by animals.name order by count desc limit 1
+
+select animals.name, owners.full_name from animals join visits on animals.id = visits.animal_id join owners on owners.id = animals.owner_id where visits.vet_id = (select id from vets where name = 'Maisy Smith') order by visits.date_of_visit limit 1;
+
