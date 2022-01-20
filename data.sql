@@ -47,5 +47,15 @@ insert into specializations(vet_id, species_id) values ((select id from vets whe
 
 --visits querries
 
-insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Augmon'), (select id from vets where name ='William Tatcher'), 2020-05-24)
-insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Augmon'), (select id from vets where name ='Stephanie Mendez'), 2020-07-22)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Agumon'), (select id from vets where name ='William Tatcher'), 2020-05-24)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Agumon'), (select id from vets where name ='Stephanie Mendez'), 2020-07-22)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Gabumon'), (select id from vets where name ='Jack Harkness'), 2021-02-02)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Pikachu'), (select id from vets where name ='Maisy Smith'), 2020-01-05)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Pikachu'), (select id from vets where name ='Maisy Smith'), 2020-03-08)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Pikachu'), (select id from vets where name ='Maisy Smith'), 2020-05-14)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Devimon'), (select id from vets where name ='Stephanie Mendez'), 2021-05-04)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Charmander'), (select id from vets where name ='Jack Harkness'), 2021-02-24)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Plantmon'), (select id from vets where name ='Maisy Smith'), 2019-02-21)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Plantmon'), (select id from vets where name ='William Tatcher'), 2020-08-10)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Plantmon'), (select id from vets where name ='Maisy Smith'), 2021-04-07)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Pikachu'), (select id from vets where name ='Maisy Smith'), 2020-01-05)
