@@ -68,3 +68,6 @@ select animals.name, visits.date_of_visit from animals join visits on animals.id
 select count(distinct  animals.name) from animals join visits on animals.id = visits.animal_id where visits.vet_id = (select id from vets where name = 'Stephanie Mendez')
 select vets.name, specializations.species_id from vets left join specializations on vets.id = specializations.vet_id join species on specializations.species_id = species.id order by vets.name;
 
+select animals.name, visits.date_of_visit from animals join visits on animals.id = visits.animal_id where visits.vet_id = (select id from vets where name = 'Stephanie Mendez') and visits.date_of_visit between '2020-04-01' and '2020-08-30';
+
+A
