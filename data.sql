@@ -64,4 +64,6 @@ insert into visits (animal_id, vet_id, date_of_visit) values ((select id from an
 insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Boarmon'), (select id from vets where name ='Maisy Smith'), 2019-01-24)
 insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Boarmon'), (select id from vets where name ='Maisy Smith'), 2020-05-15)
 insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Boarmon'), (select id from vets where name ='Maisy Smith'), 2020-02-27)
-insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Poarmon'), (select id from vets where name ='Maisy Smith'), 2020-01-05)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Boarmon'), (select id from vets where name ='Maisy Smith'), 2020-08-03)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Blossom'), (select id from vets where name ='Stephanie Mendez'), 2020-05-24)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Blossom'), (select id from vets where name ='William Tatcher'), 2020-01-05)
