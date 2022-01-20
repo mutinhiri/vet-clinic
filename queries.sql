@@ -78,4 +78,4 @@ select animals.*, vets.*, visits.date_of_visit from animals join visits on anima
 
 select count(*) from visits join vets on vets.id = visits.vet_id join animals on animals.id = visits.animal_id join specializations on specializations.vet_id = vets.id where specializations.species_id <> animals.species_id;
 
-select species.name, count(visits.animal_id) from visits join vets on vets.id = visits.vet_id join animals on animalsid = visits.animal_id
+select species.name, count(visits.animal_id) from visits join vets on vets.id = visits.vet_id join animals on animalsid = visits.animal_id join species on species.id = animals.species_id where vets.name = 'Maisy Smith' group by species.name order by count desc limit 1
