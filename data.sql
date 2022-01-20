@@ -33,3 +33,10 @@ update animals set owner_id = (select id from owners where full_name = 'Jennifer
 update animals set owner_id = (select id from owners where full_name = 'Bob') where name = 'Devimon' or name = 'Plantmon'
 update animals set owner_id = (select id from owners where full_name = 'Melody Pond') where name = 'Charmander' or name = 'Squirtle' or name = 'Blossom'
 update animals set owner_id = (select id from owners where full_name = 'Dean Winchester') where name = 'Angemon' or name = 'Boarmon'
+
+--vet table insert entries 
+
+insert into vets(name, age, date_of_graduation) values ('William Tatcher', 45, '2000-04-23')
+insert into vets(name, age, date_of_graduation) values ('Maisy Smith', 26, '2019-01-17')
+insert into vets(name, age, date_of_graduation) values ('Stephanie Mendez', 64, '1981-05-04')
+insert into vets(name, age, date_of_graduation) values ('Jack Harness', 38, '2008-06-08')
