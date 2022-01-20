@@ -76,3 +76,5 @@ select animals.name, owners.full_name from animals join visits on animals.id = v
 
 select animals.*, vets.*, visits.date_of_visit from animals join visits on animals.id = visits.animal_id join vets on visits.vet_id = vets.id order by visits.date_of_visit desc limit 1
 
+select count(*) from visits join vets on vets.id = visits.vet_id join animals on animals.id = visits.animal_id join specializations on specializations.vet_id = vets.id where specializations.species_id <> animals.species_id;
+
