@@ -74,3 +74,5 @@ select animals.name, count(*) from animals left join visits on animals.id = visi
 
 select animals.name, owners.full_name from animals join visits on animals.id = visits.animal_id join owners on owners.id = animals.owner_id where visits.vet_id = (select id from vets where name = 'Maisy Smith') order by visits.date_of_visit limit 1;
 
+select animals.*, vets.*, visits.date_of_visit from animals join visits on animals.id = visits.animal_id join vets on visits.vet_id = vets.id order by visits.date_of_visit desc limit 1
+
