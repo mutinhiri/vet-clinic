@@ -38,3 +38,25 @@ alter table animals
 add owner_id int;
 
 alter table animals add foreign key(owner_id) references owners(id) 
+
+--create table vets
+create table vets(
+	id serial primary key,
+	name varchar,
+	age int,
+	date_of_graduation date
+);
+
+--handle many to many relationship
+
+create table specializations(
+	species_id int references species (id),
+	vet_id int references vets(id)
+);
+
+--table to join visits 
+create table visits (
+	animal_id int references animals(id),
+	vet_id int references vets(id),
+	date_of_visit date
+)
