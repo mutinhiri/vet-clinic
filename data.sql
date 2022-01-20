@@ -40,3 +40,5 @@ insert into vets(name, age, date_of_graduation) values ('William Tatcher', 45, '
 insert into vets(name, age, date_of_graduation) values ('Maisy Smith', 26, '2019-01-17')
 insert into vets(name, age, date_of_graduation) values ('Stephanie Mendez', 64, '1981-05-04')
 insert into vets(name, age, date_of_graduation) values ('Jack Harness', 38, '2008-06-08')
+
+insert into specializations(vet_id, species_id) values ((select id from vets where name = 'William Tatcher'), (select id from species where name = 'Pokemon' ))
