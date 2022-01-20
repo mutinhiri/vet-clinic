@@ -44,3 +44,8 @@ insert into vets(name, age, date_of_graduation) values ('Jack Harness', 38, '200
 insert into specializations(vet_id, species_id) values ((select id from vets where name = 'William Tatcher'), (select id from species where name = 'Pokemon' 
 insert into specializations(vet_id, species_id) values ((select id from vets where name = 'Stephanie Mendez'), (select id from species where name = 'Pokemon' and name = 'Digimon' ))
 insert into specializations(vet_id, species_id) values ((select id from vets where name = 'Jack Harness'), (select id from species where name = 'Digimon' ))
+
+--visits querries
+
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Augmon'), (select id from vets where name ='William Tatcher'), 2020-05-24)
+insert into visits (animal_id, vet_id, date_of_visit) values ((select id from animals where name = 'Augmon'), (select id from vets where name ='Stephanie Mendez'), 2020-07-22)
