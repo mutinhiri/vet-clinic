@@ -65,3 +65,5 @@ select owners.full_name, count(animals.owner_id) from animals full join owners o
 --queries to answer questrions
 
 select animals.name, visits.date_of_visit from animals join visits on animals.id = visits.animal_id where visits.vet_id = (select id from vets where name = 'William Tatcher') order by visits.date_of_visit desc limit 1;
+select count(distinct  animals.name) from animals join visits on animals.id = visits.animal_id where visits.vet_id = (select id from vets where name = 'Stephanie Mendez')
+select vets.name, specialization.species_id
