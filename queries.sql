@@ -78,3 +78,4 @@ select animals.*, vets.*, visits.date_of_visit from animals join visits on anima
 
 select count(*) from visits join vets on vets.id = visits.vet_id join animals on animals.id = visits.animal_id join specializations on specializations.vet_id = vets.id where specializations.species_id <> animals.species_id;
 
+select species.name
