@@ -20,7 +20,7 @@ create table invoices (
   total_amount decimal,
   generated_at timestamp,
   payed_at timestamp,
-  medical_history_id
+  medical_history_id refences medical_histories(id)
 )
 
 create table invoice_items(
