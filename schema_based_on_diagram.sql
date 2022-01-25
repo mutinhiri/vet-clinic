@@ -11,4 +11,6 @@ create table medical_histories(
 
 create table treatments(
   id int primary key,
-)
+  type varchar,
+  name varchar
+);
