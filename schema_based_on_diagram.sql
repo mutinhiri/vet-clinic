@@ -15,9 +15,13 @@ create table treatments(
   name varchar
 );
 
+create table 
+
 create table invoice_items(
   id int primary key,
   unit_price decimal,
   quqntity int,
-  total_price decimal
+  total_price decimal,
+  invoice_id int references invoices(id),
+  treatment_id int references treatment(id)
 )
