@@ -15,7 +15,13 @@ create table treatments(
   name varchar
 );
 
-create table 
+create table invoices (
+  id int primary key,
+  total_amount decimal,
+  generated_at timestamp,
+  payed_at timestamp,
+  medical_history_id
+)
 
 create table invoice_items(
   id int primary key,
