@@ -14,3 +14,10 @@ create table treatments(
   type varchar,
   name varchar
 );
+
+create table invoice_items(
+  id int primary key,
+  unit_price decimal,
+  quqntity int,
+  total_price decimal
+)
